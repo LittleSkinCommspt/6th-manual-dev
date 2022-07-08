@@ -1,160 +1,89 @@
 module.exports = {
-  locales: {
-    '/': {
-      lang: 'zh-CN',
-      title: 'LittleSkin 用户使用手册',
-    },
-    '/en/': {
-      lang: 'en-US',
-      title: 'LittleSkin User Manual',
-    },
-  },
+  title: 'LittleSkin 用户使用手册',
+  base: '/',
   ga: 'UA-136793183-1',
   head: [
-    [
-      'link',
-      {
-        rel: 'icon',
-        href:
-          'https://littleskin-resource-1251562235.file.myqcloud.com/favicon.png',
-      },
-    ],
+      ['link', { rel: 'icon', href: 'https://littleskin-resource-1251562235.file.myqcloud.com/favicon.png' }]
   ],
   serviceWorker: true,
   markdown: {
-    lineNumbers: true,
-    externalLinks: { target: '_blank' },
+      lineNumbers: true,
+      externalLinks: { target: '_blank' }
   },
   themeConfig: {
-    docsRepo: 'LittleSkinChina/manual',
-    docsBranch: 'master',
-    editLinks: true,
-    locales: {
-      '/': {
-        selectText: 'Languages',
-        label: '简体中文',
-        ariaLabel: 'Languages',
-        editLinkText: '帮助我们完善这个页面',
-        nav: [
-            { text: '返回 LittleSkin', link: 'https://littlesk.in' },
-            { text: '六周年庆典', link: '/6thAnniv/' },
-            { text: '社区支持机器人', link: 'https://bot-manual.restent.win' },
-            { text: '捐助支持', link: 'https://afdian.net/@tnqzh123' }
-        ],
-        sidebar: {
-            '/6thAnniv/': [
-                ['/6thAnniv/', '首页'],
-                '/6thAnniv/singup.html',
-                '/6thAnniv/schedule.html',
-                '/6thAnniv/lottery.html',
-                ['/6thAnniv/skyblock.html', '空岛生存竞赛'],
-                {
-                    title: '小游戏竞赛',
-                    collapsable: true,
-                    children: [
-                        ['/6thAnniv/bedwar/', '简述'],
-                        ['/6thAnniv/bedwar/preliminary.html', '初赛'],
-                        ['/6thAnniv/bedwar/quaterfinal.html', '复赛'],
-                        ['/6thAnniv/bedwar/semifinal.html', '半决赛'],
-                        ['/6thAnniv/bedwar/final.html', '决赛']
-                    ]
-                },
-                ['/6thAnniv/redeem.html', '积分兑换'],
-                ['/6thAnniv/rewards.html', '奖品'],
-                '/6thAnniv/winner.md'
-            ],
-            '/': [
-                ['/', '欢迎页'],
-                {
-                    title: '政策条款',
-                    collapsable: true,
-                    children: [
-                        ['/policies/tos.html', '用户服务条款'],
-                        '/policies/privacy.html'
-                    ]
-                },
-                {
-                    title: '新手指引',
-                    collapsable: true,
-                    children: [
-                        '/newbee/player.html',
-                        '/newbee/textures.html',
-                        '/newbee/mod.html'
-                    ]
-                },
-                '/score.html',
-                {
-                    title: '高级功能',
-                    collapsable: true,
-                    children: [
-                        '/advanced/api.html',
-                        '/advanced/yggdrasil.html',
-                        '/advanced/oauth2.html'
-                    ]
-                },
-                '/faq.html',
-                ['/report.html', '报告问题的正确姿势'],
-                '/email.html',
-                ['/user-group.html', '用户交流群']
-            ]
-        },
-        lastUpdated: '最后更新 ',
-        algolia: {
-            apiKey: process.env.ALGOLIA_APIKEY,
-            indexName: 'littleskin'
-        },
-        lastUpdated: '最后更新 ',
+      docsRepo: 'LittleSkinChina/manual',
+      docsBranch: 'master',
+      editLinks: true,
+      editLinkText: '帮助我们完善这个页面',
+      nav: [
+          { text: '返回 LittleSkin', link: 'https://littlesk.in' },
+          { text: '六周年庆典', link: '/6thAnniv/' },
+          { text: '社区支持机器人', link: 'https://bot-manual.restent.win' },
+          { text: '捐助支持', link: 'https://afdian.net/@tnqzh123' }
+      ],
+      sidebar: {
+          '/6thAnniv/': [
+              ['/6thAnniv/', '首页'],
+              '/6thAnniv/singup.html',
+              '/6thAnniv/schedule.html',
+              '/6thAnniv/lottery.html',
+              ['/6thAnniv/skyblock.html', '空岛生存竞赛'],
+              {
+                  title: '小游戏竞赛',
+                  collapsable: true,
+                  children: [
+                      ['/6thAnniv/bedwar/', '简述'],
+                      ['/6thAnniv/bedwar/preliminary.html', '初赛'],
+                      ['/6thAnniv/bedwar/quaterfinal.html', '复赛'],
+                      ['/6thAnniv/bedwar/semifinal.html', '半决赛'],
+                      ['/6thAnniv/bedwar/final.html', '决赛']
+                  ]
+              },
+              ['/6thAnniv/redeem.html', '积分兑换'],
+              ['/6thAnniv/rewards.html', '奖品'],
+              '/6thAnniv/winner.md'
+          ],
+          '/': [
+              ['/', '欢迎页'],
+              {
+                  title: '政策条款',
+                  collapsable: true,
+                  children: [
+                      ['/policies/tos.html', '用户服务条款'],
+                      '/policies/privacy.html'
+                  ]
+              },
+              {
+                  title: '新手指引',
+                  collapsable: true,
+                  children: [
+                      '/newbee/player.html',
+                      '/newbee/textures.html',
+                      '/newbee/mod.html'
+                  ]
+              },
+              '/score.html',
+              {
+                  title: '高级功能',
+                  collapsable: true,
+                  children: [
+                      '/advanced/api.html',
+                      '/advanced/yggdrasil.html',
+                      '/advanced/oauth2.html'
+                  ]
+              },
+              '/faq.html',
+              ['/report.html', '报告问题的正确姿势'],
+              '/email.html',
+              ['/user-group.html', '用户交流群']
+          ]
       },
-      '/en/': {
-        selectText: 'Languages',
-        label: 'English',
-        ariaLabel: 'Languages',
-        editLinkText: 'Help us improve this page',
-        nav: [
-          { text: 'Back to LittleSkin', link: 'https://littleskin.cn' },
-          {
-            text: 'Commspt Bot',
-            link: 'https://bot-manual.restent.win/',
-          },
-          { text: 'Support Us', link: 'https://afdian.net/@tnqzh123' },
-        ],
-        sidebar: [
-          ['/en/', 'Welcome'],
-          {
-            title: 'Policy',
-            collapsable: true,
-            children: [
-              ['/en/policies/tos.md', 'User Terms of Service'],
-              '/en/policies/privacy.md',
-            ],
-          },
-          {
-            title: 'Getting Started',
-            collapsable: true,
-            children: [
-              '/en/newbee/player.md',
-              '/en/newbee/textures.md',
-              '/en/newbee/mod.md',
-            ],
-          },
-          '/en/score.md',
-          {
-            title: 'Advanced',
-            collapsable: true,
-            children: [
-              '/en/advanced/api.md',
-              '/en/advanced/yggdrasil.md',
-              '/en/advanced/oauth2.md',
-            ],
-          },
-          '/en/faq.md',
-          '/en/report.md',
-          '/en/email.md',
-          ['/en/user-group.md', 'User Groups'],
-        ],
-        lastUpdated: 'Last Updated',
+      lastUpdated: '最后更新 ',
+      algolia: {
+          apiKey: process.env.ALGOLIA_APIKEY,
+          indexName: 'littleskin'
       },
-    },
-    evergreen: true
+      smoothScroll: true
+  },
+  evergreen: true
 }
-
