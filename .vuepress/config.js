@@ -29,7 +29,7 @@ module.exports = {
               '/6thAnniv/lottery.html',
               ['/6thAnniv/skyblock.html', '空岛生存竞赛'],
               {
-                  title: '小游戏竞赛',
+                  title: '起床战争',
                   collapsable: true,
                   children: [
                       ['/6thAnniv/bedwar/', '简述'],
