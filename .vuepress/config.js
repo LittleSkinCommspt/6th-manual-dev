@@ -32,11 +32,11 @@ module.exports = {
                   title: '起床战争',
                   collapsable: true,
                   children: [
-                      ['/6thAnniv/bedwar/', '简述'],
-                      ['/6thAnniv/bedwar/preliminary.html', '初赛'],
-                      ['/6thAnniv/bedwar/quaterfinal.html', '复赛'],
-                      ['/6thAnniv/bedwar/semifinal.html', '半决赛'],
-                      ['/6thAnniv/bedwar/final.html', '决赛']
+                      ['/6thAnniv/bedwars/', '简述'],
+                      ['/6thAnniv/bedwars/preliminary.html', '初赛'],
+                      ['/6thAnniv/bedwars/quaterfinal.html', '复赛'],
+                      ['/6thAnniv/bedwars/semifinal.html', '半决赛'],
+                      ['/6thAnniv/bedwars/final.html', '决赛']
                   ]
               },
               ['/6thAnniv/redeem.html', '积分兑换'],
