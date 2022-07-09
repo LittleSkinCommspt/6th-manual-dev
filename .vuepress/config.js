@@ -34,7 +34,6 @@ module.exports = {
                   children: [
                       ['/6thAnniv/bedwars/', '简述'],
                       ['/6thAnniv/bedwars/preliminary.html', '初赛'],
-                      ['/6thAnniv/bedwars/quaterfinal.html', '复赛'],
                       ['/6thAnniv/bedwars/semifinal.html', '半决赛'],
                       ['/6thAnniv/bedwars/final.html', '决赛']
                   ]
